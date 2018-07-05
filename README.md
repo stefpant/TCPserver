@@ -21,3 +21,7 @@ Project seperated in 3 parts:
         directory to save_dir.At the same time,on command port waits for user commands(same as webserver
         and a new SEARCH command(typing "SEARCH word1 ... [max]word10") to search for any of those words in
         save_dir(forking a new process and running jobExecutor)).
+        Run: ./mycrawler -h <server_host_or_IP> -p <server_s_port> -c <c_port> -d ../save_dir -t <n_threads> <starting_URL>
+        (must run in webcrawler directory)
+
+Users can connect on command port using telnet( "telnet <host> <command_port>" )!
